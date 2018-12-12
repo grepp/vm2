@@ -259,8 +259,8 @@ describe('VM', () => {
 	it('timeout', () => {
 		assert.throws(() => new VM({
 			timeout: 10
-		}).run("while (true) {}"), /Script execution timed out\./);
-		assert.throws(() => vm.run("sub.getter"), /Script execution timed out\./);
+		}).run("while (true) {}"), /Script execution timed out/);
+		assert.throws(() => vm.run("sub.getter"), /Script execution timed out/);
 	})
 
 	it('timers', () => {
